@@ -6,7 +6,7 @@
 }*/
 
 .a{
-    height:25%;
+    height:110px;
 }
 .a1{
     height:100%;
@@ -16,36 +16,43 @@
 .div1{
     height:100%;
 }
+.nothing{
+    height:100%;
+    width:40%;
+    float: left;
+}
 .a11{
     height:100%;
-    width:50%;
+    width:20%;
     float: left;
 }
 .a12{
      height:100%;
-    width:50%;
+    width:40%;
     float: left;
 }
 .b{
-    background-color:#8a8a8a;
-    height:75%;
+    background-color:#f2f2f2;
+    //height:75%;
    
 }
 .b1{
-     background-color:#8a8a8a;
+     background-color:#f2f2f2;
      height:20em;
   
 }
 .b2{
-     background-color:#8a8a8a;
-    height:100em;
+     background-color:#f2f2f2;
+    //height:100em;
     float: left;
+    width:100%;
     word-wrap: break-word;
 }
 .p1{
-
-    margin-left:25%;
-    margin-right:25%;
+    padding-left:20px;
+    padding-right:20px;
+    margin-left:265px;
+    margin-right:305px;
     background-color:rgb(255,255,255);
     border: solid white 1px;
     
@@ -63,26 +70,26 @@
 #s3{
     float: left;
     border: solid white 1px;
-    color:#8a8a8a;
+    color:#f2f2f2;
 }
 #s4{
     background-color: white;   
-    color: red;
+    color: #E2364E;
     border: solid white 1px;
     float: left;
-    margin-left:65%;
-    margin-top:40px;
-    width:30%;
-    height:40px;
+    margin-left:30px;
+    margin-top:73px;
+    width:100px;
+    height:23px;
 }
 #s5{                        
     background-color: white;   
-    color: red;
-     border: solid red 1px;
+    color:#E2364E;
+     border: solid #E2364E 1px;
     float: left;
-    margin-top:40px;
-    height:40px;
-    width:30%;
+    margin-top:73px;
+    height:23px;
+    width:80px;
     margin-left:5%;
 }
 #s6{
@@ -100,30 +107,30 @@
     width: 80%;
 }
 .txt1{
-    height:50%;
+    height:60%;
     width:100%;
 }
 .txt2{
     width:100%;
-    height:50%;
+    height:40%;
 }
 #un{
 
-    margin-top:30px;
+    margin-top:40px;
     border-bottom:1px solid black;
     color: red;
     float: left;
-    font-size:30;
+    font-size:20;
 }
 #gin{
-    margin-top:30px;
+    margin-top:40px;
     border-bottom:1px solid black;
-    color:#8a8a8a;
+    color: black;
     float: left;
-    font-size:30;
+    font-size:20;
 }
 #bit{
-    margin-top:1px;
+    margin-top:2px;
    
     font-size:10;
 }
@@ -136,26 +143,26 @@
 .p11{
     
     margin-top: solid 1px black;
-    margin-left:25%;
-    margin-right:25%;
+    margin-left:265px;
+    margin-right:305px;
     background-color:rgb(255,255,255);
     border: solid white 1px;
 }
 #write{
-    margin-left:25%;
+    margin-left:265px;;
 }
 #area{
-    margin-left:25%;
-    margin:right:25%;
+    margin-left:265px;
+    margin:right:305px;
     background-color:rgb(255,255,255);
     height:150px;
-    width:660px;
+    width:760px;
     
     
 }
 #sub{
     margin-left:913px;
-    background-color: red;
+    background-color: #FC1F47;
     border: solid red 1px; 
     color: white;
     height:30px;
@@ -166,7 +173,7 @@
 }
 hr{
     border-bottom: dashed black 1px;
-    margin-left:25%;
-    margin-right:25%;
+    margin-left:265px;
+    margin-right:305px;
 }
 

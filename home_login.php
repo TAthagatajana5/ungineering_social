@@ -27,6 +27,8 @@
                     </div>
                 </div>
                 <div class="a1">
+                    <div class="nothing">
+                    </div>
                     <div class="a11">
                         <input type="submit" name="submit" value="My Dashboard" id="s4"/>
                     </div>
@@ -37,88 +39,80 @@
                 </div>
             </div>
             <div class="b">
-                <div class="b1"><br></br>
+                
+                    <div class="b1"><br></br>
                 
                     <h1 id="write">Write something here</h1>
-                    <input type="textarea" name="textarea" id="area"/>
+                    <form method=POST action="status_submit.php">
+                    <textarea id="area" name="area" rows="15" cols="75"></textarea>
                     <input type="submit" name="submit" value="Submit" id="sub"/></br>
+                    </form>
                     <hr></hr>
                     
                 </div>
-                <div class ="b2">
-                    <p class="p1">
-                        <b>Name</b></br></br>
-                    
-                        Social Text is an academic journal published by Duke University Press. Since its inception by an independent editorial     
-                        collective in 1979, Social Text has addressed a wide range of social and cultural phenomena, covering questions of gender, 
-                        sexuality, race, and the environment.</br></br>
-                    
-                        TIME-24:40 HRS|IST 30 TH DEC </br></br>
-                    </p>
-                    <p class="p1">
-                   `    Name</br></br>
-                    
-                        Social Text is an academic journal published by Duke University Press. Since its inception by an independent editorial     
-                        collective in 1979, Social Text has addressed a wide range of social and cultural phenomena, covering questions of gender, 
-                        sexuality, race, and the environment.</br></br>
-                    
-                        TIME-24:40 HRS|IST 30 TH DEC </br></br>
-                    </p>
-                    <p class="p1">
-                        Name</br></br>
-                    
-                        Social Text is an academic journal published by Duke University Press. Since its inception by an independent editorial     
-                        collective in 1979, Social Text has addressed a wide range of social and cultural phenomena, covering questions of gender, 
-                        sexuality, race, and the environment.</br></br>
-                    
-                        TIME-24:40 HRS|IST 30 TH DEC </br></br>
-                    </p>
-                    <p class="p1">
-                        <b>Name</b></br></br>
-                    
-                        Social Text is an academic journal published by Duke University Press. Since its inception by an independent editorial     
-                        collective in 1979, Social Text has addressed a wide range of social and cultural phenomena, covering questions of gender, 
-                        sexuality, race, and the environment.</br></br>
-                    
-                        TIME-24:40 HRS|IST 30 TH DEC </br></br>
-                    </p>
-                    <p class="p1">
-                        <b>Name</b></br></br>
-                    
-                        Social Text is an academic journal published by Duke University Press. Since its inception by an independent editorial     
-                        collective in 1979, Social Text has addressed a wide range of social and cultural phenomena, covering questions of gender, 
-                        sexuality, race, and the environment.</br></br>
-                    
-                        TIME-24:40 HRS|IST 30 TH DEC </br></br>
-                    </p>
-                    <p class="p1">
-                        <b>Name</b></br></br>
-                    
-                        Social Text is an academic journal published by Duke University Press. Since its inception by an independent editorial     
-                        collective in 1979, Social Text has addressed a wide range of social and cultural phenomena, covering questions of gender, 
-                        sexuality, race, and the environment.</br></br>
-                    
-                        TIME-24:40 HRS|IST 30 TH DEC </br></br>
-                    </p>
-                    <p class="p1">
-                        <b>Name</b></br></br>
-                    
-                        Social Text is an academic journal published by Duke University Press. Since its inception by an independent editorial     
-                        collective in 1979, Social Text has addressed a wide range of social and cultural phenomena, covering questions of gender, 
-                        sexuality, race, and the environment.</br></br>
-                    
-                        TIME-24:40 HRS|IST 30 TH DEC </br></br>
-                    </p>
-                    <p class="p1">
-                        <b>Name</b></br></br>
-                    
-                        Social Text is an academic journal published by Duke University Press. Since its inception by an independent editorial     
-                        collective in 1979, Social Text has addressed a wide range of social and cultural phenomena, covering questions of gender, 
-                        sexuality, race, and the environment.</br></br>
-                    
-                        TIME-24:40 HRS|IST 30 TH DEC </br></br>
-                    </p>
-                </div>
+                 <div class ="b2">
+                <?php
+                $hostname = "localhost";
+                $username = "root";
+                $db_password = "123456";
+                $database = "social_media";
+
+                $conn = mysqli_connect($hostname, $username, $db_password, $database);
+                if (!$conn) {
+                    die("Connection failed: " . mysqli_connect_error());
+                }
+               
+                $sql = "SELECT * FROM statuses";
+
+                $result = mysqli_query($conn, $sql);
+                if (!$result) {
+                    die("Error: " . $sql . "<br>" . mysqli_error($conn));
+                }
+                $c=0;
+                while ($row=mysqli_fetch_array($result)) {
+                    $c++;
+                }
+
+                for($i=$c-1;$i>=0;$i--)
+                {
+                ?>
+                <p class="p1">
+                    </br>
+                    <?php
+                        
+
+                        $sql = "SELECT
+                                     users.name, statuses.status, statuses.date_time
+                                FROM
+                                     statuses
+                                INNER JOIN
+                                    users
+                                ON
+                                    statuses.user_id=users.id
+                                AND
+                                    users.id=$i+1"
+                                
+                               ;    
+                                
+                        $result = mysqli_query($conn, $sql);
+                        if (!$result) {
+                            die("Error: " . $sql . "<br>" . mysqli_error($conn));
+                        }
+
+                        while ($row=mysqli_fetch_array($result)) {?>
+                    <span class="name"><b>Name <?php echo $row['name']?></b></span></br></br>
+                
+                    <span class="stat"><?php echo $row['status']?></span></br></br>                               
+                
+                    <span class="time">TIME: <?php echo $row['date_time']?></span></br></br>
+                    <?php } ?>
+                </p>
+                <?php }?>
+                
+                
+                
+               
+            </div>
             </div>
         </div>
     </body>
