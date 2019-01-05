@@ -1,0 +1,164 @@
+*{
+    box-sizing: border-box;
+}
+/*{
+    border: solid black 1px;
+}*/
+
+.a{
+    height:110px;
+}
+.a1{
+    height:100%;
+    width:50%;
+    float: left;
+    
+   
+}
+.div1{
+    height:100%;
+}
+.nothing{
+    height:100%;
+    width:40%;
+    float: left;
+}
+.a11{
+    height:100%;
+    width:20%;
+    float: left;
+}
+.a12{
+     height:100%;
+    width:40%;
+    float: left;
+}
+.b{
+    background-color:#f2f2f2;
+    //height:75%;
+   
+}
+.b1{
+     background-color:#f2f2f2;
+     height:35px;
+}
+.b2{
+     background-color:#f2f2f2;
+    //height:100em;
+    width:100%;
+    float: left;
+    word-wrap: break-word;
+}
+.p1{
+    padding-left:20px;
+    padding-right:20px;
+    margin-left:265px;
+    margin-right:305px;
+    background-color:rgb(255,255,255);
+    border: solid white 1px;
+    
+}
+#s1{
+    
+    border: solid white 1px;
+    float: left;
+}
+#s2{
+    float: left;
+    border: solid white 1px;
+    color: red;
+}
+#s3{
+    float: left;
+    border: solid white 1px;
+    color:#f2f2f2;
+}
+#s4{
+    background-color: white;   
+    color: red;
+    border: solid red 1px;
+    float: left;
+    margin-left:40px;
+    margin-top:73px;
+    
+   
+    width:80px;
+    height:23px;
+}
+#s5{                        
+    background-color: red;   
+    color: white;
+    //float: left;
+    margin-top:73px;
+    height:23px;
+    width:80px;
+    margin-left:5%;
+    border:1px solid red;
+}
+#s6{
+    //float: left;
+    margin-left:55px;
+}
+.logo{
+    height:100%;
+    float: left;
+    width: 20%;
+}
+.txt{
+    height:100%;
+    float: left;
+    width: 80%;
+}
+.txt1{
+    height:60%;
+    width:100%;
+}
+.txt2{
+    width:100%;
+    height:40%;
+}
+#un{
+
+    margin-top:40px;
+    border-bottom:1px solid black;
+    color: red;
+    float: left;
+    font-size:20;
+}
+#gin{
+    margin-top:40px;
+    border-bottom:1px solid black;
+    color: black;
+    float: left;
+    font-size:20;
+}
+#bit{
+    margin-top:2px;
+   
+    font-size:10;
+}
+
+#bit1{
+    color: red;
+}
+#byte{
+    color: red;
+    //float: left;
+}
+
+.p11{
+    //margin-top:10px;
+    margin-left:265px;
+    margin-right:305px;
+    background-color:rgb(255,255,255);
+    border: solid white 1px;
+    padding-left:20px;
+    padding-right:20px;
+}
+.stat{
+    color: gray;
+}
+.name{
+    font-style: bold;
+    margin-top:3px;
+}
