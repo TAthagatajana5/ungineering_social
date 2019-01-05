@@ -26,84 +26,39 @@
                 <div class="a23">
                     <div class="a231">
                         <div class="a2311">
-                            <p class="des">NAME</p>
+                            <p class="des">Name</p>
                         </div>
                         <div class="a2312">
-                            <input class="form_element" type="text" name="name"/>
+                            <p class="des">Email</p>
                         </div>
-                    </div>
-                    <div class="a232">
-                        <div class="a2321">
-                            <p class="des">EMAIL</p>
+                        <div class="a2313">
+                            <p class="des">Password</p>
                         </div>
-                        <div class="a2322">
-                            <input class="form_element" type="text" name="email"/>
-                        </div>
-                    </div>
-                    <div class="a233">
-                        <div class="a2331">
-                            <p class="des">PASSWORD</p>
-                        </div>
-                        <div class="a2332">
-                            <input class="form_element" type="password" name="password"/>
-                        </div>
-                    </div>
-                    <div class="a234">
-                        <div class="a2341">
-                            <p class="des">PASSWORD</p>
-                        </div>
-                        <div class="a2342">
-                            <input class="form_element" type="password" name="cfm_password"/>
-                        </div>
-                    </div>
-                    <div class="a235">
-                        <div class="a2351">
-                            
-                        </div>
-                        <div class="a2352">
-                            <button class="createbtn" type="submit" name="submit" value="Submit">Create Account</button>
-                        </div>
-                    </div>
-                    <div class="a236">
-                        <div class="a2361">
-                            
-                        </div>
-                        <div class="a2362">
-                            <a class="anchor1" href="http://127.0.0.1/social_media/login_form.php">Existing User Log-in</a>
-                        </div>
-                    </div>
-                    <div class="a237">
-                        <div class="a2371">
-                            
-                        </div>
-                        <div class="a2372">
-                            
+                        <div class="a2314">
+                            <p class="des">Password</p>
                         </div>
                     </div>
                     <div class="a232">
                         <form method="post" action="register_submit.php">
                             <div class="a2321">
-                                
+                                <input class="form_element" type="text" name="name"/>
                             </div>
                             <div class="a2322">
-                                
+                                <input class="form_element" type="text" name="email"/>
                             </div>
                             <div class="a2323">
-                                
+                                <input class="form_element" type="password" name="password"/>
                             </div>
                             <div class="a2324">
-                                
+                                <input class="form_element" type="password" name="confirm_password"/>
                             </div>
                             <div class="a2325">
-                                
-                        </form><br/>
+                                <button class="createbtn" type="submit" name="submit" value="Submit">Create Account</button>
                             </div>
                             <div class="a2326">
-                                
+                                <a class="anchor1" href="http://127.0.0.1/social_media/login_form.php">Existing User Log-in</a>
                             </div>
-                            <div class="a2327">
-
-                            </div>
+                        </form>
                     </div>
                 </div>
             </div>

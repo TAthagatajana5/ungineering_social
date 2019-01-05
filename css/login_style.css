@@ -1,66 +1,195 @@
 *{
     box-sizing: border-box;
 }
-html{
-    height:100%;
-    width:100%;
-}
 .container {
-    height:100%;
-    width:100%;
-    border-style: solid;
-    border-width: 1px;
-    border-color: white;
+    height:635px;
+    margin:0px;
 }
 .a{
     position: relative;
     height:80%;
     border-style: solid;
     border-width: 1px;
-    border-color: white white #333333 white;
+    border-color: white;
 }
 .b{
-    
     position: relative;
     height:20%;
-    background-color:#333333;
+    background-color:#373737;
     border-style: solid;
     border-width: 1px;
-    border-color: #333333 white white white;
+    border-color: white;
 }
 .a1{
+    width:28.45%;
     height:100%;
-    width:20%;
     float:left;
     border-style: solid;
     border-width: 1px;
-    border-color: white #cccccc #333333 white;
+    border-color: white;
 }
 .a2{
+    width:71.55%;
     height:100%;
-    width:80%;
-    background-color:#cccccc;
     float:left;
     border-style: solid;
     border-width: 1px;
-    border-color: white white #333333 #cccccc;
+    border-color: white;
 }
 .a11{
     position: relative;
-    height:20%;
+    height:25%;
     border-style: solid;
     border-width: 1px;
-    border-color: white #cccccc white white;
+    border-color: white;
 }
-.b12{
-    
+.a12{
     position: relative;
-    height:80%;
+    height:75%;
     border-style: solid;
     border-width: 1px;
-    border-color: white #cccccc #333333 white;
+    border-color: white;
+}
+.a21{
+    position: relative;
+    height:25%;
+    background-color: #F4F4F4;
+    border-style: solid;
+    border-width: 1px;
+    border-color: #F4F4F4;
+}
+.a22{
+    position: relative;
+    height:10%;
+    background-color: #F4F4F4;
+    border-style: solid;
+    border-width: 1px;
+    border-color: #F4F4F4;
+}
+.a23{
+    position: relative;
+    height:65%;
+    border-style: solid;
+    border-width: 1px;
+    border-color: #F4F4F4;
+    background-color: #F4F4F4;
+}
+.a231{
+    width:24%;
+    height:100%;
+    float:left;
+    border-style: solid;
+    border-width: 1px;
+    border-color: #F4F4F4;
+    background-color: #F4F4F4;
+}
+.a232{
+    width:76%;
+    height:100%;
+    float:left;
+    border-style: solid;
+    border-width: 1px;
+    border-color: #F4F4F4;
+}
+.a2311{
+    position: relative;
+    height: 10%;
+    margin-top: 5px;
+    border-style: solid;
+    border-width: 1px;
+    border-color: #F4F4F4;
+    background-color: #F4F4F4;
+}
+.a2312{
+    position: relative;
+    height: 10%;
+    margin-top: 10px;
+    border-style: solid;
+    border-width: 1px;
+    border-color: #F4F4F4;
+    background-color: #F4F4F4;
+}
+.a2321,.a2322{
+    position: relative;
+    height:10%;
+    margin-top: 8px;
+    border-style: solid;
+    border-width: 1px;
+    border-color: #F4F4F4;
+    background-color: #F4F4F4;
+}
+.a2323{
+    position: relative;
+    height:10%;
+    margin-top: 18px;
+    border-style: solid;
+    border-width: 1px;
+    border-color: #F4F4F4;
+    background-color: #F4F4F4;
+}
+.a2324{
+    position: relative;
+    height:10%;
+    margin-top: 12px;
+    border-style: solid;
+    border-width: 1px;
+    border-color: #F4F4F4;
+    background-color: #F4F4F4;
 }
 .logo{
-    height:100%;
-    width:100%;
+    width: 50%;
+    margin-top: 30px;
+    margin-left: 60px;
+}
+.sideh1{
+    text-align:left;
+    font-size:25px;
+    font-family: sans-serif;
+    color: #747474;
+    margin-left: 75px;
+    margin-top: 11px;
+    margin-bottom: 8px;
+}
+.mainh1{
+    font-size: 24.5px;
+    font-weight: bold;
+    font-family: sans-serif;
+    color: #747474;
+    margin: 0px;
+    margin-left: 71px;
+    margin-top: 11.6px;
+}
+.createbtn{
+    font-size: 12px;
+    font-weight: bold;
+    font-family: sans-serif;
+    border: none;
+    border-radius: 3px;
+    padding: 8px 143px 8px 143px;
+    color: white;
+    background-color: #F04C4D;
+}
+.des{
+    font-size: 12.5px;
+    margin-left: 69.5px;
+    font-family: sans-serif;
+}
+.form_element{
+    font-size: 25px;
+    padding-right: 3px;
+    padding-bottom: 2px;
+    border: none;
+    border-radius: 3px;
+}
+.anchor{
+    font-size: 12.5px;
+    color: #D25050;
+    font-family: sans-serif;
+    margin-left: 76px;
+}
+.anchor1{
+    font-size: 12px;
+    font-family: sans-serif;
+    color: #D25050;
+    margin-left: 91px;
 }

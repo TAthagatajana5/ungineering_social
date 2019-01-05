@@ -3,9 +3,6 @@
 }
 .container {
     height:635px;
-    border-style: solid;
-    border-width: 1px;
-    border-color: white;
     margin:0px;
 }
 .a{
@@ -75,136 +72,87 @@
     border-style: solid;
     border-width: 1px;
     border-color: #F4F4F4;
+    background-color: #F4F4F4;
 }
 .a231{
-    width:25%;
-    height: 100%;
+    width:24%;
+    height:100%;
     float:left;
-    background-color: #F4F4F4;
     border-style: solid;
     border-width: 1px;
-    border-color: #F4F4F4;     
+    border-color: #F4F4F4;
+    background-color: #F4F4F4;
 }
 .a232{
-    width:75%;
-    height: 100%;
+    width:76%;
+    height:100%;
     float:left;
-    background-color: #F4F4F4;
     border-style: solid;
     border-width: 1px;
     border-color: #F4F4F4;
 }
 .a2311{
     position: relative;
-    height:10%;
-    background-color: #F4F4F4;
+    height: 10%;
+    margin-top: 5px;
     border-style: solid;
     border-width: 1px;
     border-color: #F4F4F4;
+    background-color: #F4F4F4;
 }
 .a2312{
     position: relative;
-    height:10%;
-    background-color: #F4F4F4;
+    height: 10%;
+    margin-top: 10px;
     border-style: solid;
     border-width: 1px;
     border-color: #F4F4F4;
+    background-color: #F4F4F4;
 }
 .a2313{
     position: relative;
-    height:10%;
-    background-color: #F4F4F4;
+    height: 10%;
+    margin-top: 8px;
     border-style: solid;
     border-width: 1px;
     border-color: #F4F4F4;
+    background-color: #F4F4F4;
 }
 .a2314{
     position: relative;
-    height:10%;
-    background-color: #F4F4F4;
+    height: 10%;
+    margin-top: 9px;
     border-style: solid;
     border-width: 1px;
     border-color: #F4F4F4;
+    background-color: #F4F4F4;
 }
-.a2315{
+.a2321,.a2322,.a2323,.a2324{
     position: relative;
     height:10%;
-    background-color: #F4F4F4;
+    margin-top: 8px;
     border-style: solid;
     border-width: 1px;
     border-color: #F4F4F4;
-}
-.a2316{
-    position: relative;
-    height:10%;
     background-color: #F4F4F4;
-    border-style: solid;
-    border-width: 1px;
-    border-color: #F4F4F4;
-}
-.a2317{
-    position: relative;
-    height:10%;
-    background-color: #F4F4F4;
-    border-style: solid;
-    border-width: 1px;
-    border-color: #F4F4F4;
-}
-.a2321{
-    position: relative;
-    height:10%;
-    background-color: #F4F4F4;
-    border-style: solid;
-    border-width: 1px;
-    border-color: #F4F4F4;
-}
-.a2322{
-    position: relative;
-    height:10%;
-    background-color: #F4F4F4;
-    border-style: solid;
-    border-width: 1px;
-    border-color: #F4F4F4;
-}
-.a2323{
-    position: relative;
-    height:10%;
-    background-color: #F4F4F4;
-    border-style: solid;
-    border-width: 1px;
-    border-color: #F4F4F4;
-}
-.a2324{
-    position: relative;
-    height:10%;
-    background-color: #F4F4F4;
-    border-style: solid;
-    border-width: 1px;
-    border-color: #F4F4F4;
 }
 .a2325{
     position: relative;
     height:10%;
-    background-color: #F4F4F4;
+    margin-top: 18px;
     border-style: solid;
     border-width: 1px;
     border-color: #F4F4F4;
+    background-color: #F4F4F4;
 }
 .a2326{
     position: relative;
     height:10%;
-    background-color: #F4F4F4;
+    margin-top: 12px;
     border-style: solid;
     border-width: 1px;
     border-color: #F4F4F4;
-}
-.a2327{
-    position: relative;
-    height:10%;
     background-color: #F4F4F4;
-    border-style: solid;
-    border-width: 1px;
-    border-color: #F4F4F4;
 }
 .logo{
     width: 50%;
@@ -213,41 +161,53 @@
 }
 .sideh1{
     text-align:left;
-    font-size:28px;
-    color:#808080;
-    margin-left: 76px;
+    font-size:25px;
+    font-family: sans-serif;
+    color: #747474;
+    margin-left: 75px;
     margin-top: 11px;
+    margin-bottom: 8px;
 }
 .mainh1{
-    font-size: 28px;
-    color: #808080;
+    font-size: 24.5px;
+    font-weight: bold;
+    font-family: sans-serif;
+    color: #747474;
     margin: 0px;
-    margin-left: 73px;
-    margin-top: 10px;
+    margin-left: 71px;
+    margin-top: 11.6px;
 }
 .createbtn{
     font-size: 12px;
-    padding: 9px 118px 9px 118px;
+    font-weight: bold;
+    font-family: sans-serif;
+    border: none;
+    border-radius: 3px;
+    padding: 8px 117px 8px 117px;
     color: white;
     background-color: #F04C4D;
 }
 .des{
-    font-size: 13px;
-    margin-left: 73px;
-    margin-top: 27px;
+    font-size: 12.5px;
+    margin-left: 69.5px;
+    font-family: sans-serif;
 }
 .form_element{
     font-size: 25px;
+    padding-right: 3px;
+    padding-bottom: 2px;
+    border: none;
     border-radius: 3px;
-    margin-top: 10px;
 }
 .anchor{
-    font-size: 12px;
+    font-size: 12.5px;
     color: #D25050;
+    font-family: sans-serif;
     margin-left: 76px;
 }
 .anchor1{
     font-size: 12px;
+    font-family: sans-serif;
     color: #D25050;
-    margin-left: 109px;
+    margin-left: 108px;
 }
