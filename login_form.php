@@ -8,13 +8,13 @@
         <div class="a">
             <div class="a1">
                 <div class="a11">
-                    <a href="http://127.0.0.1/social_media/login_form.php">
+                    <a href="login_form.php">
                         <img class="logo" src="img/logo.png" alt="logo of the site"/>
                     </a>
                 </div>
                 <div class="a12">
                     <h1 class="sideh1">Existing User <br/> Log-in</h1>
-                    <a class="anchor" href="http://127.0.0.1/social_media/register_form.php">New User Create Account</a>
+                    <a class="anchor" href="register_form.php">New User Create Account</a>
                 </div>
             </div>
             <div class="a2">
@@ -44,7 +44,7 @@
                                 <button class="createbtn" type="submit" name="submit" value="Submit">Log-in</button>
                             </div>
                             <div class="a2324">
-                                <a class="anchor1" href="http://127.0.0.1/social_media/register_form.php">New User Create Account</a>
+                                <a class="anchor1" href="register_form.php">New User Create Account</a>
                             </div>
                         </form>
                     </div>

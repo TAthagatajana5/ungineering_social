@@ -121,7 +121,7 @@
 .a2314{
     position: relative;
     height: 10%;
-    margin-top: 9px;
+    margin-top: 7px;
     border-style: solid;
     border-width: 1px;
     border-color: #F4F4F4;
@@ -183,7 +183,9 @@
     font-family: sans-serif;
     border: none;
     border-radius: 3px;
-    padding: 8px 117px 8px 117px;
+    padding-bottom: 8px;
+    padding-top: 8px;
+    width: 314px;
     color: white;
     background-color: #F04C4D;
 }
@@ -193,9 +195,12 @@
     font-family: sans-serif;
 }
 .form_element{
-    font-size: 25px;
+    font-size: 15px;
+    width: 314px;
     padding-right: 3px;
-    padding-bottom: 2px;
+    padding-top: 7px;
+    padding-bottom: 7px;
+    padding-left: 5px;
     border: none;
     border-radius: 3px;
 }
@@ -209,5 +214,5 @@
     font-size: 12px;
     font-family: sans-serif;
     color: #D25050;
-    margin-left: 108px;
+    margin-left: 103px;
 }

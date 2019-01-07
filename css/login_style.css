@@ -165,7 +165,9 @@
     font-family: sans-serif;
     border: none;
     border-radius: 3px;
-    padding: 8px 143px 8px 143px;
+    padding-bottom: 8px;
+    padding-top: 8px;
+    width: 314px;
     color: white;
     background-color: #F04C4D;
 }
@@ -175,9 +177,12 @@
     font-family: sans-serif;
 }
 .form_element{
-    font-size: 25px;
+    font-size: 15px;
+    width: 314px;
     padding-right: 3px;
-    padding-bottom: 2px;
+    padding-top: 7px;
+    padding-bottom: 7px;
+    padding-left: 5px;
     border: none;
     border-radius: 3px;
 }
