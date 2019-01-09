@@ -32,8 +32,25 @@ session_start();
                 <div class="a1">
                     <div class="nothing">
                     </div>
+                    <?php
+                    if (isset($_SESSION['id'])){
+                    ?>
                     <div class="a11">
-                        <form method="POST action="register_form.php">
+                        <form method="POST" action="register_form.php">
+                        <input type="submit" name="submit" value="my dashboard" id="s4"/>
+                        </form>
+                    </div>
+                    <div class="a12">
+                        <form method=POST action="login_form.php">
+                        <input type="submit" name="submit" value="logout" id="s5"/>
+                        </form>
+                    </div>
+                    
+                    <?php }
+                    else{ 
+                    ?>
+                     <div class="a11">
+                        <form method="POST" action="register_form.php">
                         <input type="submit" name="submit" value="new user" id="s4"/>
                         </form>
                     </div>
@@ -42,6 +59,7 @@ session_start();
                         <input type="submit" name="submit" value="login" id="s5"/>
                         </form>
                     </div>
+                    <?php }?>
                 </div>
             </div>
             <div class="b">
@@ -56,7 +74,9 @@ session_start();
                             <textarea id="area" name="area" rows="15" cols="75"></textarea>
                             <input type="submit" name="submit" value="Submit" id="sub"/></br>
                         </form>
+                        
                         <hr></hr>
+                      
                     </div>
                     <?php
                 }
@@ -106,7 +126,8 @@ session_start();
 
 
 
-
+                      <script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
+                      <script type="text/javascript" src="js/submit.js"></script>
                 </div>
             </div>
         </div>
