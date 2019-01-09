@@ -6,9 +6,13 @@
     $db_password="123456";
     $db_name="social_media";
     
+    $response = array();
     $conn=mysqli_connect($hostname,$username,$db_password,$db_name);
     if(!$conn){
-        die("connection failed:".mysqli_connect_error());
+        $response['success'] = false;
+        $response['message'] = "Connection failed: " . mysqli_connect_error();
+        echo json_encode($response);
+        exit();
     }
     
     $email=$_POST['email'];
@@ -16,8 +20,10 @@
     
     if(strlen($email)==0 || strlen($password)==0)
     {
-        echo "log-in failed: fill all the required fields and try again<br/>";
-        die("<a href='login_form.php'>Click Here</a>To Continue");
+        $response['success'] = false;
+        $response['message'] = "Fill all the required fields";
+        echo json_encode($response);
+        exit();
     }
     
     
@@ -25,7 +31,10 @@
     $result=mysqli_query($conn,$fetch);
     
     if (!$result) {
-        die("Error: " . $fetch . "<br>" . mysqli_error($conn));
+        $response['success'] = false;
+        $response['message'] = "Error: " . $sql . "<br>" . mysqli_error($conn);
+        echo json_encode($response);
+        exit();
     }
     
     $flag=0;
@@ -37,15 +46,17 @@
     }
     
     if($flag==0){
-        echo  "log-in unsuccessful try again";
-        die("<a href='login_form.php'>Click Here</a>To Continue");
+        $response['success'] = false;
+        $response['message'] = "Login failed email and password not matched";
     } 
     else{
         $_SESSION['id']=$row['id'];
         $_SESSION['name']=$row['name'];
-        header('location:home.php');
-     }    	
+        $response['success'] = true;
+        $response['message'] = "Welcome " . $row['name'];
+     }  
 
+    echo json_encode($response);
     mysqli_close($conn);
 
 
