@@ -5,9 +5,13 @@ $username = "root";
 $db_password = "123456";
 $db_name = "social_media";
 
+$response = array();
 $conn = mysqli_connect($hostname, $username, $db_password, $db_name);
 if (!$conn) {
-    die("connection failed:" . mysqli_connect_error());
+    $response['success'] = false;
+    $response['message'] = "Connection failed: " . mysqli_connect_error();
+    echo json_encode($response);
+    exit();
 }
 
 
@@ -17,29 +21,39 @@ $password = $_POST['password'];
 $confirm_password = $_POST['confirm_password'];
 
 if (strlen($name) == 0 || strlen($email) == 0 || strlen($password) == 0) {
-    echo "Registation failed: fill all the required fields and try again<br/>";
-    die("<a href='register_form.php'>Click Here</a>To Continue");
+    $response['success'] = false;
+    $response['message'] = "Fill all the required fields";
+    echo json_encode($response);
+    exit();
 }
 
 if ($password != $confirm_password) {
-    echo "Registation failed: password not matched<br/>";
-    die("<a href='register_form.php'>Click Here</a>To Continue");
+    $response['success'] = false;
+    $response['message'] = "Password not matched";
+    echo json_encode($response);
+    exit();
 }
 
-$fetch = "SELECT * FROM users WHERE BINARY email='$email'";
+$fetch = "SELECT * FROM users WHERE email='$email'";
 $result = mysqli_num_rows(mysqli_query($conn, $fetch));
 
 if ($result == 0) {
     $insert = "INSERT INTO users(name,email,password)VALUES('$name','$email','$password')";
     if (!mysqli_query($conn, $insert)) {
-        die("Error:" . $sql . "<br/>" . mysqli_error($conn) . "<br/><a href='register_form.php'>Click Here</a>To Continue");
+        $response['success'] = false;
+        $response['message'] = "Error: " . $sql . "<br>" . mysqli_error($conn);
+        echo json_encode($response);
+        exit();
     }
-    echo "Registration successful";
+    $response['success'] = true;
+    $response['message'] = "Registration successful";
+    echo json_encode($response);
     mysqli_close($conn);
-    header('location:login_form.php');
 } else {
-    echo "Registration failed: $email This email is already registered<br/>try with another email<br/>";
-    die("<a href='register_form.php'>Click Here</a>To Continue");
+    $response['success'] = false;
+    $response['message'] = "This email is already register";
+    echo json_encode($response);
+    exit();
 }
 ?>
 

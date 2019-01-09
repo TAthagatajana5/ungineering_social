@@ -1,3 +1,9 @@
+<?php
+    /*session_start();
+    if(isset($_SESSION['id'])){
+         header('location:home.php');
+    }*/ 
+?>
 <!DOCTYPEhtml>
 <html>
     <head>
@@ -8,7 +14,7 @@
         <div class="a">
             <div class="a1">
                 <div class="a11">
-                    <a href="login_form.php">
+                    <a href="home.php">
                         <img class="logo" src="img/logo.png" alt="logo of the site"/>
                     </a>
                 </div>
@@ -33,7 +39,7 @@
                         </div>
                     </div>
                     <div class="a232">
-                        <form method="post" action="login_submit.php">
+                        <form id="login_form" method="post" action="login_submit.php">
                             <div class="a2321">
                                 <input class="form_element" type="text" name="email"/>
                             </div>
@@ -53,6 +59,8 @@
         </div>
         <div class="b">
         </div>
+        <script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
+        <script type="text/javascript" src="js/login.js"></script>
         <script type="text/javascript" src="js/login_script.js"></script>
     </body>
 </html>

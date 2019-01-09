@@ -22,4 +22,5 @@
     }
     //echo"Your status:".$status;
     mysqli_close();
+    header('location:home.php');
 ?>
