@@ -94,11 +94,14 @@
     margin-left:5%;
 }
 #s6{
-    //float: left;
-    margin-left:55px;
+    float: right;
+    
+    position: relative;
+    left:8px;
 }
 .logo{
     height:100%;
+    //float: right;
     float: left;
     width: 20%;
 }

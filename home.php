@@ -91,6 +91,7 @@ session_start();
 
                     while ($row = mysqli_fetch_array($result)) {
                         ?>
+                        
                         <p class="p1">
                             </br>
                             <span class="name"><b>Name <?php echo $row['name'] ?></b></span></br></br>
