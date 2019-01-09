@@ -43,7 +43,7 @@
     else{
         $_SESSION['id']=$row['id'];
         $_SESSION['name']=$row['name'];
-        header('location:home_login.php');
+        header('location:home.php');
      }    	
 
     mysqli_close($conn);
