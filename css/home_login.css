@@ -181,4 +181,23 @@ hr{
     margin-left:265px;
     margin-right:305px;
 }
-
+#logout{
+    background-color: white;   
+    color: #E2364E;
+    border: solid white 1px;
+    float: right;
+    margin-left:30px;
+    margin-top:80px;
+    width:54px;
+    height:23px;
+}
+#dash{                        
+    background-color: white;   
+    color:#E2364E;
+     border: solid #E2364E 1px;
+    float: left;
+    margin-top:79px;
+    height:23px;
+    //width:80px;
+    margin-left:5%;
+}

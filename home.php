@@ -36,14 +36,13 @@ session_start();
                     if (isset($_SESSION['id'])){
                     ?>
                     <div class="a11">
-                        <form method="POST" action="register_form.php">
-                        <input type="submit" name="submit" value="my dashboard" id="s4"/>
-                        </form>
+                        <a href="logout.php" >
+                        <button id="logout" >logout</button></a>
+                       
                     </div>
                     <div class="a12">
-                        <form method=POST action="login_form.php">
-                        <input type="submit" name="submit" value="logout" id="s5"/>
-                        </form>
+                      <a href="dashboard.php" >
+                        <button  id="dash"> My dashboard</button></a>
                     </div>
                     
                     <?php }
