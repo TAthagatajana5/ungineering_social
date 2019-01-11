@@ -21,13 +21,21 @@
 
     $status=$_POST['area'];
     //echo"Your status:".$status;
-    $sql="INSERT INTO statuses(status,user_id) VALUES ('$status',$user_id)";
+    if($status==NULL){
+        $response['success']=false;
+        $response['message']="status cannot be empty";
+        echo json_encode($response);
+        exit();
+    }
+    else{
+    $sql="INSERT INTO statuses(status,user_id) VALUES ('$status',$user_id)";}
     if(!mysqli_query($conn,$sql)){
         $response['success'] = false;
         $response['message'] = "Error: " . $sql . "<br>" . mysqli_error($conn);
         echo json_encode($response);
         exit();
     }
+    
     //echo"Your status:".$status;
      $response['success'] = true;
      echo json_encode($response);
