@@ -198,3 +198,20 @@
     color: #D25050;
     margin-left: 91px;
 }
+span{
+    font-size: 12px;
+    color: red;
+    font-weight: bold;
+}
+#l1{
+    margin-left: 361px;
+    margin-top: 198px;
+    font-family: sans-serif;
+    font-size: 45px;
+}
+#l2{
+    font-family: sans-serif;
+    font-size: 25px;
+    color: #D25050;
+    margin-left: 557px;
+}

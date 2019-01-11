@@ -1,3 +1,21 @@
+<?php
+    session_start();
+    if(isset($_SESSION['id'])){
+        ?>
+<!DOCTYPEhtml>
+<html>
+	<head>
+		<title>ALREADY LOGIN</title>
+        <link rel="stylesheet" href="css/register_style.css"/>
+	</head>
+	<body>
+        <h1 id="l1">YOU ARE ALREADY LOGGED IN</h1>
+        <a id="l2" href="home.php">CLICK HERE TO CONTINUE</a>
+	</body>
+</html>       
+    <?php } 
+    else{
+        ?>
 <!DOCTYPEhtml>
 <html>
     <head>
@@ -41,19 +59,23 @@
                     <div class="a232">
                         <form id="register_form" method="post" action="register_submit.php">
                             <div class="a2321">
-                                <input class="form_element" type="text" name="name"/>
+                                <input id="name" class="form_element" type="text" name="name"/>
+                                <span id="sname"></span>
                             </div>
                             <div class="a2322">
-                                <input class="form_element" type="text" name="email"/>
+                                <input id="email" class="form_element" type="text" name="email"/>
+                                <span id="semail"></span>
                             </div>
                             <div class="a2323">
-                                <input class="form_element" type="password" name="password"/>
+                                <input id="pass" class="form_element" type="password" name="password"/>
+                                <span id="spass"></span>
                             </div>
                             <div class="a2324">
-                                <input class="form_element" type="password" name="confirm_password"/>
+                                <input id="conpass" class="form_element" type="password" name="confirm_password"/>
+                                <span id="sconf"></span>
                             </div>
                             <div class="a2325">
-                                <button class="createbtn" type="submit" name="submit" value="Submit">Create Account</button>
+                                <button id="submit" class="createbtn" type="submit" name="submit" value="Submit">Create Account</button>
                             </div>
                             <div class="a2326">
                                 <a class="anchor1" href="login_form.php">Existing User Log-in</a>
@@ -70,3 +92,6 @@
         <script type="text/javascript" src="js/register_script.js"></script>
     </body>
 </html>
+
+    <?php }
+?>

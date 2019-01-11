@@ -11,7 +11,8 @@ session_start();
             <div class="a">
                 <div class="a1" >
                     <div class="logo">
-                        <img src="img/ungineering_logo.svg" id="s6"/> 
+                        <a href="home.php">
+                        <img src="img/ungineering_logo.svg" id="s6"/> </a>
                     </div>
                     <div class="txt">
 
@@ -36,27 +37,23 @@ session_start();
                     if (isset($_SESSION['id'])){
                     ?>
                     <div class="a11">
-                        <a href="logout.php" >
-                        <button id="logout" >logout</button></a>
-                       
+                        <a id="dash" href="dashboard.php" >My dashboard</a>
                     </div>
                     <div class="a12">
-                      <a href="dashboard.php" >
-                        <button  id="dash"> My dashboard</button></a>
+                      <a href="logout.php" >
+                        <button id="logout" >logout</button></a>
                     </div>
                     
                     <?php }
                     else{ 
                     ?>
                      <div class="a11">
-                        <form method="POST" action="register_form.php">
-                        <input type="submit" name="submit" value="new user" id="s4"/>
-                        </form>
+                        <a href="login_form.php" >
+                        <button id="s4" >login</button></a>
                     </div>
                     <div class="a12">
-                        <form method=POST action="login_form.php">
-                        <input type="submit" name="submit" value="login" id="s5"/>
-                        </form>
+                        <a href="register_form.php" >
+                        <button id="s5" >New user</button></a>
                     </div>
                     <?php }?>
                 </div>

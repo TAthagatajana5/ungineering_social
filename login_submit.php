@@ -16,7 +16,9 @@
     }
     
     $email=$_POST['email'];
+    $email=mysqli_real_escape_string($conn,$email);
     $password=$_POST['password'];
+    $password=mysqli_real_escape_string($conn,$password);
     
     if(strlen($email)==0 || strlen($password)==0)
     {

@@ -20,6 +20,7 @@
     }
 
     $status=$_POST['area'];
+    $status=mysqli_real_escape_string($conn,$status);
     //echo"Your status:".$status;
     if($status==NULL){
         $response['success']=false;

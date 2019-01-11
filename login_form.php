@@ -1,9 +1,21 @@
 <?php
-    /*session_start();
+    session_start();
     if(isset($_SESSION['id'])){
-         header('location:home.php');
-    }*/ 
-?>
+        ?>
+<!DOCTYPEhtml>
+<html>
+	<head>
+		<title>ALREADY LOGIN</title>
+        <link rel="stylesheet" href="css/login_style.css"/>
+	</head>
+	<body>
+        <h1 id="l1">YOU ARE ALREADY LOGGED IN</h1>
+        <a id="l2" href="home.php">CLICK HERE TO CONTINUE</a>
+	</body>
+</html>       
+    <?php } 
+    else{
+        ?>
 <!DOCTYPEhtml>
 <html>
     <head>
@@ -41,13 +53,15 @@
                     <div class="a232">
                         <form id="login_form" method="post" action="login_submit.php">
                             <div class="a2321">
-                                <input class="form_element" type="text" name="email"/>
+                                <input id="email" class="form_element" type="text" name="email"/>
+                                <span id="semail"></span>
                             </div>
                             <div class="a2322">
-                                <input class="form_element" type="password" name="password"/>
+                                <input id="pass" class="form_element" type="password" name="password"/>
+                                <span id="spass"></span>
                             </div>
                             <div class="a2323">
-                                <button class="createbtn" type="submit" name="submit" value="Submit">Log-in</button>
+                                <button id="submit" class="createbtn" type="submit" name="submit" value="Submit">Log-in</button>
                             </div>
                             <div class="a2324">
                                 <a class="anchor1" href="register_form.php">New User Create Account</a>
@@ -64,3 +78,6 @@
         <script type="text/javascript" src="js/login_script.js"></script>
     </body>
 </html>
+
+    <?php }
+?>

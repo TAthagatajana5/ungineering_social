@@ -16,9 +16,13 @@ if (!$conn) {
 
 
 $name = $_POST['name'];
+$name=mysqli_real_escape_string($conn,$name);
 $email = $_POST['email'];
+$email=mysqli_real_escape_string($conn,$email);
 $password = $_POST['password'];
+$password=mysqli_real_escape_string($conn,$password);
 $confirm_password = $_POST['confirm_password'];
+$confirm_password=mysqli_real_escape_string($conn,$confirm_password);
 
 if (strlen($name) == 0 || strlen($email) == 0 || strlen($password) == 0) {
     $response['success'] = false;
