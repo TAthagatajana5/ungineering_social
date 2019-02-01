@@ -21,10 +21,7 @@ class Home extends CI_Controller {
      */
     public function index() {
         session_start();
-
         $this->load->model('status');
-        $this->load->model('user');
-        
         $r = $this->status->fetch_all_statuses();
         $this->load->view('homepage',['data'=>$r]);
      }
@@ -51,7 +48,7 @@ class Home extends CI_Controller {
         }
 
         $status = $_POST['area'];
-        $status = mysqli_real_escape_string($conn, $status);
+        //$status = mysqli_real_escape_string($conn, $status);
         //echo"Your status:".$status;
         if ($status == NULL) {
             $response['success'] = false;
@@ -63,14 +60,16 @@ class Home extends CI_Controller {
             'status' => $status,
             'user_id' => $user_id,
             );
-           $sql= $this->status->insert_status($data);
-        
-        if (!$sql) {
-            $response['success'] = false;
-            $response['message'] = "Error:";
-            echo json_encode($response);
-            exit();
-        }
+            $this->load->model('status');
+            
+            $sql= $this->status->insert_status($data);
+            
+            if (!$sql) {
+                $response['success'] = false;
+                $response['message'] = "Error:";
+                echo json_encode($response);
+                exit();
+            }
         }
 
         //echo"Your status:".$status;

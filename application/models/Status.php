@@ -22,23 +22,19 @@ class Status extends CI_Model {
                 ON
                     statuses.user_id=users.id
                 ORDER BY 
-                    statuses.date_time DESC, users.name ASC")*;*/
-        
+                    statuses.date_time DESC, users.name ASC");*/
         $this->db->select('*');
         $this->db->from('statuses');
         $this->db->join('users', 'statuses.user_id = users.id');
-        $this->db->order_by('statuses.date_time DESC, users.name ASC');
+        $this->db->order_by('date_time DESC,name ASC');
         $query = $this->db->get();
-        
-       
+
         
         return $query->result_array();
     }
-     public function insert_status($data) {
-       $this->db->insert('statuses', $data);
+    public function insert_status($data) {
+        $this->db->insert('statuses',$data);
+        
     }
-    
-
 }
-
 ?>

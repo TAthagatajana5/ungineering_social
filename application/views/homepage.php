@@ -4,15 +4,15 @@
 <html>
     <head>
         <title></title>
-        <link rel="stylesheet" href="/social_media/static/css/home.css"/>
+        <link rel="stylesheet" href="/static/css/home.css"/>
     </head>
     <body>
         <div>
             <div class="a">
-                <div class="a1" >
+                <div class="a1">
                     <div class="logo">
                         <a href="home.php">
-                        <img src="/social_media/static/img/ungineering_logo.svg" id="s6"/> </a>
+                        <img src="/static/img/ungineering_logo.svg" id="s6"/> </a>
                     </div>
                     <div class="txt">
 
@@ -96,8 +96,8 @@
 
 
 
-                      <script type="text/javascript" src="/social_media/js/jquery-3.3.1.min.js"></script>
-                      <script type="text/javascript" src="/social_media/js/submit.js"></script>
+                      <script type="text/javascript" src="/static/js/jquery-3.3.1.min.js"></script>
+                      <script type="text/javascript" src="/static/js/submit.js"></script>
                 </div>
             </div>
         </div>
